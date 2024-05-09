@@ -29,3 +29,15 @@ Before submitting your result please make sure that:
 - The code is formatted (including your favorite linter is a good idea); code that does not meet basic readability criteria will be rejected
 - The application resembles what is visible on screenshots in the design folder
 - The application meets criteria listed above in common desktop and mobile browsers
+
+---
+
+**How to use the app**
+
+1. cd fullstack-code-test-ts-master
+2. npm install
+3. npm start
+4. open browser to view the app at localhost:3000
+5. cd tests
+6. npm install
+7. npm run tests (to run unit tests)
