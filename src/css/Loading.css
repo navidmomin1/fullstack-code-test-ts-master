@@ -1,0 +1,44 @@
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Center the loading component on the screen */
+}
+
+.expanding-circle {
+  position: relative;
+  width: 50px; /* Initial size of the circle */
+  height: 50px;
+  border-radius: 50%; /* Circular shape */
+  border: 2px solid transparent;
+  animation: expand 1.5s infinite; /* Animation for expanding */
+}
+
+.center-dot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the dot */
+  width: 10px; /* Size of the dot */
+  height: 10px;
+  border-radius: 50%; /* Circular shape */
+  background-color: green; /* Green color for the dot */
+}
+
+@keyframes expand {
+  0% {
+    width: 50px;
+    height: 50px;
+    border: 2px solid transparent; /* Initial state with no border */
+  }
+  50% {
+    width: 80px; /* Expand the circle */
+    height: 80px;
+    border: 2px solid lightgreen; /* Visible border during expansion */
+  }
+  100% {
+    width: 110px; /* Final expanded size */
+    height: 110px;
+    border: 2px solid transparent; /* Fade the border */
+  }
+}
